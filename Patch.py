@@ -5,6 +5,10 @@ import sys
 from Rom import Rom
 from N64Patch import apply_patch_file
 
+if len(sys.argv) < 2:
+    print('Usage: py patcher.exe base_rom patch_file [output_file]')
+    exit()
+
 patched_file = 'patched.z64'
 
 # If the user specified an output file, use that filename

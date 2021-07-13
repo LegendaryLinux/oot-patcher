@@ -2,7 +2,7 @@ import json
 import os
 import subprocess
 import copy
-from Utils import is_bundled, subprocess_args, local_path, get_version_bytes
+from Utils import subprocess_args, local_path, get_version_bytes
 from ntype import BigStream
 from crc import calculate_crc
 from version import __version__
